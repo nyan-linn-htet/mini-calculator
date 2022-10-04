@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        .wrap {
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+        }
+        small {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-primary">
+    <div class="container mt-5">
+        <div class="wrap bg-white rounded p-3">
+            <h1 class="text-info fs-2 text-center mb-4">Calculator Project</h1>
+            <div class="bg-dark rounded p-2 text-end text-white mb-3" id="result">0</div>
+            <div class="mb-3">
+                <label for="" class="form-label">Number One:</label>
+                <input type="number" class="form-control" placeholder="Enter Number One" id="num1">
+                <small class="text-danger" id="num1error">Number One is required !</small>
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Number Two:</label>
+                <input type="number" class="form-control" placeholder="Enter Number Two" id="num2">
+                <small class="text-danger" id="num2error">Number Two is required !</small>
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Operators:</label>
+                <select class="form-select" id="operator">
+                    <option value="error">Choose options</option>
+                    <option value="add">+</option>
+                    <option value="minus">-</option>
+                    <option value="multiply">*</option>
+                    <option value="divided">/</option>
+                </select>
+                <small class="text-danger" id="operror">Operator is required !</small>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-secondary w-100" id="btn">Calculate</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
